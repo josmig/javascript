@@ -1,0 +1,51 @@
+h1{
+  background-color: red;
+}
+p{
+  background-color: green;
+}
+a{
+  background-color: blue;
+  color:white;
+}
+
+.box-1{
+  /*El ancho del contenedor tendra un valor de 240 cuando deberia de ser de 200, los elementos como padding , border y outline suman al ancho y alto del contenedor y */
+  width: 200px;
+  height: 200px;
+  background-color: lime;
+  padding: 10px;
+  border: 10px solid #000;
+  margin: 20px;
+  outline: 10px solid red;
+}
+.box-2{
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+}
+.box-3{
+  width: 200px;
+  height: 200px;
+  background: black;
+  border: 7px solid green;
+  padding: 6em;
+  margin: 10px;
+  color:white;
+}
+.box-4{
+  width: 200px;
+  height: 200px;
+  background-color: brown;
+  border: 100px solid yellowgreen;
+  border-top-width: 200px;
+  border-top-color: transparent;
+}
+.box-5{
+  width: 200px;
+  height: 200px;
+  background-color: lime;
+  border-left-color: blue;
+  border-left-width: 5px;
+  border-left-style: dotted;
+}
