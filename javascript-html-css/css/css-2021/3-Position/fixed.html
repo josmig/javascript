@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Position Fixed</title>
+</head>
+<style>
+	*{
+		margin: 0;
+		position: 0;
+		box-sizing: border-box;
+	}
+	body{
+		padding-top: 6em;
+	}
+	nav{
+		background: blue;
+		color:white;
+		height: 70px;
+		padding: 10px;
+		position: fixed;
+		top:0;
+		width: 100%;
+	}
+	ul{
+		display:flex;
+	    justify-content: space-around;
+	    align-items: center;
+
+	}
+	li {
+		list-style: none;		
+	}
+	a{
+
+		text-decoration: none;
+		color:inherit;
+	}
+	h1{
+		text-align: center;
+	}
+	.post{
+		border: 1px solid black;
+		margin: 10px;
+		padding: 10px;
+
+	}
+</style>
+<body>
+	<nav>
+		<ul>
+			<li><a href="">Enlace 1</a></li>
+			<li><a href="">Enlace 2</a></li>
+			<li><a href="">Enlace 3</a></li>
+			<li><a href="">Enlace 4</a></li>
+		</ul>
+	</nav>
+	<h1>Bienvenidos a mi pagina</h1>
+	<div class="post">
+		<p>
+			<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, quo expedita praesentium temporibus est unde repellat, facilis, ullam tempora dolore porro fugiat totam! Obcaecati quam earum libero facere. Saepe, pariatur.</span>
+			<span>Esse provident, incidunt commodi nihil officia aperiam fugiat consequuntur nam, necessitatibus corrupti nostrum autem facilis? Asperiores aperiam, inventore? Iusto obcaecati tempore ad fugit assumenda voluptates officia minima eveniet quidem voluptas!</span>
+			<span>Culpa tenetur repudiandae necessitatibus natus? Dolores esse aspernatur inventore minus voluptatum eos laborum magni! Cumque delectus, rerum nostrum eius perferendis molestiae laudantium aut similique, deleniti magni, cupiditate, velit placeat quis!</span>
+			<span>Recusandae quis molestias dolorem vero et obcaecati temporibus, quae labore voluptates qui earum. Quasi, pariatur. Vitae, sint quibusdam repellat enim, delectus quos excepturi a, deleniti reprehenderit molestias unde earum error.</span>
+			<span>Consectetur nisi similique quo harum amet, reprehenderit dolor beatae voluptates accusantium, cum sunt quos commodi sapiente. Eos, in corrupti, nesciunt iste itaque, laudantium delectus ullam inventore adipisci beatae, quod illum?</span>
+		</p>
+	</div>
+	<div class="post">
+		<p>
+			<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum non distinctio nihil ex sit, voluptatem dolorem recusandae expedita perspiciatis facilis ipsam sed. Facilis provident iusto suscipit a, tempora optio libero?</span>
+			<span>Molestias dolorum animi explicabo ratione, debitis ducimus modi suscipit, qui, numquam dolore tenetur? Ad, ipsa suscipit doloremque quaerat obcaecati maxime cum, nulla. Ut deserunt error eos laudantium voluptatibus, eaque cupiditate.</span>
+			<span>Assumenda eaque ea culpa rerum voluptate voluptates. Nemo quis, commodi distinctio nulla libero repellat aspernatur quae aut sint error eveniet exercitationem ullam dolore adipisci quas at. Placeat ipsum, minima sit!</span>
+			<span>Impedit praesentium voluptatem, eveniet. Minima iste iusto, exercitationem provident cum eum ea, molestias facilis, natus nobis earum labore dolore architecto dolor aliquam ab quae sint eligendi. Numquam, provident sunt hic!</span>
+			<span>Est aspernatur sequi nesciunt repudiandae corporis cupiditate, distinctio asperiores consequuntur veritatis consequatur provident mollitia, dolores illo dolorum cum fugit nemo et eveniet? Repudiandae, odit magni, nisi consequuntur consectetur maiores doloremque.</span>
+		</p>
+	</div>
+	<div class="post">
+		<p>
+			<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quae dolor perspiciatis obcaecati sapiente. Eligendi dolorem delectus et exercitationem accusantium eos dolores voluptas quam praesentium tenetur quod facere, esse ipsum?</span>
+			<span>Omnis, ipsa quibusdam asperiores architecto nisi officia eligendi aut molestiae culpa praesentium sequi veritatis, laudantium veniam deserunt, non porro mollitia earum placeat sapiente. Voluptatum debitis ad qui exercitationem libero, dolorum.</span>
+			<span>Vero sunt magnam ipsum aut ipsa aliquam, obcaecati qui dolore, nemo libero veniam non deleniti consectetur molestias expedita officia quo dicta, ut in. Dolores obcaecati vel dolorem iure ipsum. Ratione?</span>
+			<span>Architecto unde repellendus, molestias ex, nobis officiis sed porro? Nam impedit sapiente quas in optio quo reprehenderit minima, laborum aut corporis, quidem non ipsum ad ipsa eius recusandae corrupti! Aut.</span>
+			<span>Blanditiis consectetur eveniet harum velit provident, numquam adipisci. Ex cumque distinctio ad, quos commodi accusantium numquam iure dolores! Corrupti earum facere ipsam labore sapiente sint, impedit amet quisquam officia laudantium.</span>
+		</p>
+	</div>
+	<div class="post">
+		<p>
+			<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi iste quod, rerum totam explicabo velit, ratione, fugit debitis aliquam temporibus repellat odit, mollitia repellendus quas. Nobis qui quo amet quae.</span>
+			<span>Vero nulla itaque maiores ullam, culpa obcaecati molestias, minima ab. Mollitia hic doloremque voluptatibus omnis debitis. Sequi, aut molestiae debitis, atque ullam excepturi ex, dolorum amet dolore tempore quae maxime.</span>
+			<span>Nihil asperiores distinctio quis reprehenderit dolorum nemo eos consequuntur. Vero voluptatem doloremque nisi dolor commodi quos molestias aliquam saepe dignissimos cumque porro ipsam, odio obcaecati nostrum natus aperiam dolorem repellat.</span>
+			<span>Eligendi magnam libero eveniet molestias nam excepturi velit, ratione quo unde delectus optio asperiores autem facilis sint vitae facere amet aspernatur, molestiae reprehenderit quos veniam. Fugiat similique, molestias aliquid corrupti!</span>
+			<span>Earum nobis minima, accusantium neque. Rem architecto dignissimos accusamus possimus eaque, porro beatae soluta odio delectus error, officia modi, asperiores. Quo, fugiat totam omnis libero hic dolorum, assumenda earum natus.</span>
+		</p>
+	</div>
+	<div class="post">
+		<p>
+			<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quae dolor perspiciatis obcaecati sapiente. Eligendi dolorem delectus et exercitationem accusantium eos dolores voluptas quam praesentium tenetur quod facere, esse ipsum?</span>
+			<span>Omnis, ipsa quibusdam asperiores architecto nisi officia eligendi aut molestiae culpa praesentium sequi veritatis, laudantium veniam deserunt, non porro mollitia earum placeat sapiente. Voluptatum debitis ad qui exercitationem libero, dolorum.</span>
+			<span>Vero sunt magnam ipsum aut ipsa aliquam, obcaecati qui dolore, nemo libero veniam non deleniti consectetur molestias expedita officia quo dicta, ut in. Dolores obcaecati vel dolorem iure ipsum. Ratione?</span>
+			<span>Architecto unde repellendus, molestias ex, nobis officiis sed porro? Nam impedit sapiente quas in optio quo reprehenderit minima, laborum aut corporis, quidem non ipsum ad ipsa eius recusandae corrupti! Aut.</span>
+			<span>Blanditiis consectetur eveniet harum velit provident, numquam adipisci. Ex cumque distinctio ad, quos commodi accusantium numquam iure dolores! Corrupti earum facere ipsam labore sapiente sint, impedit amet quisquam officia laudantium.</span>
+		</p>
+	</div>
+	<div class="post">
+		<p>
+			<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quae dolor perspiciatis obcaecati sapiente. Eligendi dolorem delectus et exercitationem accusantium eos dolores voluptas quam praesentium tenetur quod facere, esse ipsum?</span>
+			<span>Omnis, ipsa quibusdam asperiores architecto nisi officia eligendi aut molestiae culpa praesentium sequi veritatis, laudantium veniam deserunt, non porro mollitia earum placeat sapiente. Voluptatum debitis ad qui exercitationem libero, dolorum.</span>
+			<span>Vero sunt magnam ipsum aut ipsa aliquam, obcaecati qui dolore, nemo libero veniam non deleniti consectetur molestias expedita officia quo dicta, ut in. Dolores obcaecati vel dolorem iure ipsum. Ratione?</span>
+			<span>Architecto unde repellendus, molestias ex, nobis officiis sed porro? Nam impedit sapiente quas in optio quo reprehenderit minima, laborum aut corporis, quidem non ipsum ad ipsa eius recusandae corrupti! Aut.</span>
+			<span>Blanditiis consectetur eveniet harum velit provident, numquam adipisci. Ex cumque distinctio ad, quos commodi accusantium numquam iure dolores! Corrupti earum facere ipsam labore sapiente sint, impedit amet quisquam officia laudantium.</span>
+		</p>
+	</div>
+	<div class="post">
+		<p>
+			<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quae dolor perspiciatis obcaecati sapiente. Eligendi dolorem delectus et exercitationem accusantium eos dolores voluptas quam praesentium tenetur quod facere, esse ipsum?</span>
+			<span>Omnis, ipsa quibusdam asperiores architecto nisi officia eligendi aut molestiae culpa praesentium sequi veritatis, laudantium veniam deserunt, non porro mollitia earum placeat sapiente. Voluptatum debitis ad qui exercitationem libero, dolorum.</span>
+			<span>Vero sunt magnam ipsum aut ipsa aliquam, obcaecati qui dolore, nemo libero veniam non deleniti consectetur molestias expedita officia quo dicta, ut in. Dolores obcaecati vel dolorem iure ipsum. Ratione?</span>
+			<span>Architecto unde repellendus, molestias ex, nobis officiis sed porro? Nam impedit sapiente quas in optio quo reprehenderit minima, laborum aut corporis, quidem non ipsum ad ipsa eius recusandae corrupti! Aut.</span>
+			<span>Blanditiis consectetur eveniet harum velit provident, numquam adipisci. Ex cumque distinctio ad, quos commodi accusantium numquam iure dolores! Corrupti earum facere ipsam labore sapiente sint, impedit amet quisquam officia laudantium.</span>
+		</p>
+	</div>
+	<div class="post">
+		<p>
+			<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quae dolor perspiciatis obcaecati sapiente. Eligendi dolorem delectus et exercitationem accusantium eos dolores voluptas quam praesentium tenetur quod facere, esse ipsum?</span>
+			<span>Omnis, ipsa quibusdam asperiores architecto nisi officia eligendi aut molestiae culpa praesentium sequi veritatis, laudantium veniam deserunt, non porro mollitia earum placeat sapiente. Voluptatum debitis ad qui exercitationem libero, dolorum.</span>
+			<span>Vero sunt magnam ipsum aut ipsa aliquam, obcaecati qui dolore, nemo libero veniam non deleniti consectetur molestias expedita officia quo dicta, ut in. Dolores obcaecati vel dolorem iure ipsum. Ratione?</span>
+			<span>Architecto unde repellendus, molestias ex, nobis officiis sed porro? Nam impedit sapiente quas in optio quo reprehenderit minima, laborum aut corporis, quidem non ipsum ad ipsa eius recusandae corrupti! Aut.</span>
+			<span>Blanditiis consectetur eveniet harum velit provident, numquam adipisci. Ex cumque distinctio ad, quos commodi accusantium numquam iure dolores! Corrupti earum facere ipsam labore sapiente sint, impedit amet quisquam officia laudantium.</span>
+		</p>
+	</div>
+	<div class="post">
+		<p>
+			<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quae dolor perspiciatis obcaecati sapiente. Eligendi dolorem delectus et exercitationem accusantium eos dolores voluptas quam praesentium tenetur quod facere, esse ipsum?</span>
+			<span>Omnis, ipsa quibusdam asperiores architecto nisi officia eligendi aut molestiae culpa praesentium sequi veritatis, laudantium veniam deserunt, non porro mollitia earum placeat sapiente. Voluptatum debitis ad qui exercitationem libero, dolorum.</span>
+			<span>Vero sunt magnam ipsum aut ipsa aliquam, obcaecati qui dolore, nemo libero veniam non deleniti consectetur molestias expedita officia quo dicta, ut in. Dolores obcaecati vel dolorem iure ipsum. Ratione?</span>
+			<span>Architecto unde repellendus, molestias ex, nobis officiis sed porro? Nam impedit sapiente quas in optio quo reprehenderit minima, laborum aut corporis, quidem non ipsum ad ipsa eius recusandae corrupti! Aut.</span>
+			<span>Blanditiis consectetur eveniet harum velit provident, numquam adipisci. Ex cumque distinctio ad, quos commodi accusantium numquam iure dolores! Corrupti earum facere ipsam labore sapiente sint, impedit amet quisquam officia laudantium.</span>
+		</p>
+	</div>
+
+</body>
+</html>

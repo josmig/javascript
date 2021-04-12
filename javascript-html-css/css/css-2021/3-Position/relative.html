@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .title{
+            text-align: center;
+            font-size: 3em;
+        }
+        p{
+            font-size: 2em;
+        }
+        /*Position relative
+            - El valor relative hace que el elemento se coloque respecto a su posicion en el flujo
+            - Al moverlo el elemento conserva su espacio reservado
+            -*/
+        [class^='box-']{
+            width: 250px;
+            height: 250px;
+            margin: 1em auto;
+            font-size: 2.5em;
+            text-align: center;
+        }
+        .box-1{
+            background-color: lightgreen;
+            position: relative; /*Ya tiene top , bottom , left , right y z-index*/
+            /*Top y left tienen preferencia ante bottom y right*/
+            /*pero para cambiar el flujo  usamos z-index  si queremos que este prededomine con un valor es suficiente*/
+            z-index: 1; /*si declaraomos un z-index automaticamente se dibuja por encima por tener un valormayor  que el de por defecto(0)*/
+            top:100px;
+            left:-50px;
+        }
+        .box-2{
+            background-color: lightseagreen;
+            position: relative; /*tiene el mismo valor de z-index por eso esto va primero en el flujo*/
+
+        }
+    </style>
+    
+</head>
+<body>
+    <h1 class="title">Position Relative</h1>
+    <div class="box-1">Box 1</div>
+    <div class="box-2">Box 2</div>
+    
+    
+</body>
+</html>
