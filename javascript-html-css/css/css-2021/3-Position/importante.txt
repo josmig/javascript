@@ -2,12 +2,20 @@ Position es la propiedad que nos permite modificar el flujo de HTML
 Los valores de position son:
     -Static (por defecto)
     -Relative : Con esta position se mantiene el flujo aunque el contenedor no este "esteticamente" en su lugar
+
     -Absolute : Este valor hace que se coloque respecto a su contenedor posicionado mas cercano, si no encuentra    ninguo sera el viewport , el elmento no conserva su espacio en el flujo
+
     -Fixed : El elemento se colocal respecto al viewport, el elemento no conversa especio en el flujo, queda fijado
+
     -Sticky : Es una mezcla entre relative y fixed , conserva su espacio en el flujo , si no tiene espacio defino se ajustan a su contenido 
+
 Al tener los valores posicionados podemos moverlosen los 3 ejes
     -Top
     -Bottom
     -Left
     -Rigth
     -z-index : Con esto se puede mover en el eje | Orden de apilamiento de las cajas
+        - Permiten modificar el orden de las capas en el eje z
+        - Admite valores positivos y negativos
+        - Es recomendable usar valores no consecutivos ->  100,200,300 | 10,20,30 |  5 | 15 | 25...
+        - Si el padre tiene un z-index declarado no podremos poner un hijo por encimas

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Uso de z-index</title>
+</head>
+<style>
+
+	/*Por defecto el z-index vale 0*/
+	[class^=box]{
+		height: 75px;
+		width: 75px;
+		font-size: 1.5em;
+		color:white;
+		text-align: center;
+		line-height: 75px;
+		position: relative;
+
+	}
+	.box1{
+		background: green;
+		z-index: 30;
+	}
+	.box2{
+		background: red;
+		top:-38px;
+		left: 38px;
+		z-index: 20;
+	}
+	.box3{
+		background: blue;
+		top:-75px;
+		left: 75px;
+		z-index: 10;
+	}
+	.box4{
+		background: darkgoldenrod;
+		top:-150px;
+		left:50px;
+		z-index: 15; /*cuando tenemos que agregar otro valor que sea intermedio de otro es donde queda bien los valores de 15 porque si al otro elemento le pongo valor de 1 y algo 2 pero quiero agregar algo intermedio entre ellos no se podra , pero si los valores son 10 y 20 | 100 200 si se podra agregar algo intermedio con 15 o 150 */
+	}
+	.padre{
+		width: 200px;
+		height: 200px;
+		background: blue;
+		position: relative;
+		top:10px;
+	}
+	.hijo{
+		width: 50px;
+		height: 50px;
+		background: yellow;
+		position: relative;
+		left: 150px;
+		top:-30px;
+		z-index: -10;
+	}
+</style>
+<body>
+	<div class="box box1">1</div>
+	<div class="box box2">2</div>
+	<div class="box box3">3</div>
+	<div class="box box4">4</div>
+	
+	<!-- Para pasar el hijo atras del padre tenemos que tener un z-index negativo en el hijo y el padre no tener nada -->
+	<div class="padre">
+		<div class="hijo">
+			Hijo
+		</div>
+	</div>
+</body>
+</html>
