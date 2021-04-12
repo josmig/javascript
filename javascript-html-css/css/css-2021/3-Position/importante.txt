@@ -4,7 +4,7 @@ Los valores de position son:
     -Relative : Con esta position se mantiene el flujo aunque el contenedor no este "esteticamente" en su lugar
     -Absolute : Este valor hace que se coloque respecto a su contenedor posicionado mas cercano, si no encuentra    ninguo sera el viewport , el elmento no conserva su espacio en el flujo
     -Fixed : El elemento se colocal respecto al viewport, el elemento no conversa especio en el flujo, queda fijado
-    -Sticky
+    -Sticky : Es una mezcla entre relative y fixed , conserva su espacio en el flujo , si no tiene espacio defino se ajustan a su contenido 
 Al tener los valores posicionados podemos moverlosen los 3 ejes
     -Top
     -Bottom
