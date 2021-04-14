@@ -1,0 +1,12 @@
+Nos permite definir como se comportara la caja
+De forma naturla existen elementos en linea y elementos en bloque
+Los valores de esta propiedad son :
+	- inline : Establece la caja como un elemento en linea
+	- block : Establece la caja como un elemento de bloque (cubre todo el ancho)
+	- inline-block : Se comporta como un elemento en linea pero acepta width y heigth
+	- none : Oculta el elemento pero sigue renderizando
+	- table :Imita el comportamiento de una tabla
+	- list-item : Imita el comportamiento de una lista
+
+	- Flex : Para maquetar componentes (en vez de float)
+	- Grid : Para maquetar layouts
