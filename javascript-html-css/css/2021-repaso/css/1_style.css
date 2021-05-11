@@ -1,0 +1,44 @@
+/*
+    Selectores combinadores
+        Selector descendiente -> h2 .texto .card{}
+        Selector de hermano siguiente  +
+        Selector de hermanos siguientes ~
+
+*/
+
+a{
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color:white;
+}
+[href]{
+    background-color: mediumorchid;
+}
+[href="https://google.com"]{
+    background-color: mediumseagreen;
+}
+[href^="color"]{   /*Si empieza con*/
+    background-color: navy;    
+}
+[href*="verde"]{ /*si contiene el valor no importa el orden*/
+    background-color: orange;    
+}
+[href$="rojo"]{ /*Si termina en*/
+    background-color: tomato;
+}
+
+/*Texto*/
+[lang|="en"]{
+    /* background-color: magenta; */
+
+}
+
+
+/*Selectores combinadores*/
+.title ~ .texto{
+    background-color: royalblue;
+    color:white;
+    padding: 10px;
+}
