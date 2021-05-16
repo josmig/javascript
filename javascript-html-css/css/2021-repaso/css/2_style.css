@@ -1,0 +1,36 @@
+body{
+    background-color: #333;
+    color:#fff;
+}
+.box{ /*Los elementos de bloque si tienen un ancho y alto*/
+    background-color: purple;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+/*Los elementos inline solo se adaptan a su contenido pero si ponemos inline-block ya podemos usar los valores de ancho y alto*/
+.inline{
+    background-color: lightcoral;
+    color:inherit;
+    margin-left: 100px;
+}
+
+
+h1{
+    width: 300px;
+    background-color: lightcoral;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenedor{
+    background-color: lawngreen;
+    margin-top: 10px;
+    padding: 20px;
+}
+button{
+    margin-left: 200px;
+    padding: 20px 50px;
+    border: 4px solid red;
+    
+}

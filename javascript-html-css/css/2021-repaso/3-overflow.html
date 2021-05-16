@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /*
+        Overflow -> 
+        Es la propiedad que controla que debe hacer la caja cuando su contenido se desborda
+        del contenedor. Es un shorthand que engloba overflow-x y overflow-y 
+        Tiene cuatro posibles valores:
+            visible -> Es el valor por defecto
+            hidden ->El contenido que se desborde no se vera. Si aplicamos esta propiedad
+            en un solo eje , el otro se pondrá automaticamente en el valor scroll
+            scroll -> Apareceran barras de scroll en el eje asignado (x, y o ambos)
+            auto -> Apareceran barras de scroll en el caso de que hicieran falta.
+    
+    */
+
+    body{
+        background-color: black;        
+    }
+    .box{
+        background-color: aqua;
+        width: 400px;
+        height: 400px;
+        margin-top: 100px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 10px 20px;
+        border-radius: 20px;
+        /* overflow-y: auto; */
+        overflow: hidden;
+    }
+    .box1,.box2{
+        background-color: lightcoral;
+        padding: 80px;        
+    }
+</style>
+<body>
+    <div class="box">
+        <!-- <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit exercitationem libero, nobis a ipsa expedita architecto fuga quaerat perspiciatis. Suscipit non esse, tempora, sit in excepturi possimus vitae pariatur distinctio temporibus rem repellat quo provident molestias, beatae blanditiis nostrum a? Praesentium illo fugit, rem explicabo dolore molestiae dolorem soluta aspernatur nihil quo laboriosam dolores repellat aliquid vitae delectus ullam aperiam magni nulla quisquam dolor amet ad minima obcaecati ipsum! Provident architecto suscipit, modi ut soluta eius a voluptatem dicta? Dolores iure eum accusamus odit cumque ullam excepturi officiis aspernatur nemo qui, expedita iste minima nisi, suscipit, eaque ut minus error maiores. Repellendus itaque voluptate est sequi rem corporis nam. Maxime placeat excepturi sequi, dolorum enim necessitatibus ab soluta velit perspiciatis quod, alias laborum! Repellendus recusandae iure modi fugiat, temporibus consequuntur quibusdam ullam quod? Nam quibusdam aperiam, obcaecati nisi nihil magni omnis! Hic temporibus esse cupiditate rem fugit maiores, quis magnam architecto ipsa eveniet repellendus vel in voluptate reiciendis reprehenderit, quisquam maxime officia beatae eligendi! Quae beatae sed iusto voluptatem iste enim nulla quam, aliquam explicabo voluptates omnis magni quasi nesciunt velit optio nemo dolor dignissimos cumque. Eius quaerat alias cum repellat iste beatae, dolores, non soluta illo corrupti vitae doloribus!
+        </p> -->
+        <div class="box1">
+            <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. At, numquam.
+            </p>
+        </div>
+        <div class="box2">
+            <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, nobis?</p>
+        </div>
+    </div>
+
+
+</body>
+</html>
