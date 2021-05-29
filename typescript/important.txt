@@ -1,0 +1,23 @@
+
+Typescript pertenece a los lenguajes con tipado fuerte , los navegadores no entienden .ts por eso existe un compilador
+para pasarlo a JS. Typescript es un JS con superpoderes
+
+Ventajas y desventajas
+    Ventajas
+    1. Utiliza la misma sintaxis de JS
+    2. Entiende todas las caracteristicas de ECMA6
+    3. Compila tu codigo de Ts y lo transforma a JS
+    4. Promueve a una mejor calidad de codigo
+    5. Codigo mas entendible
+    6. Evita errores de lógica de codigo.
+    7. POO sencilla
+    8. Desarrollado por Microsoft
+    9. Apoyado por Google
+    10. Utilizado por Angular , Ionic, Nativescript , muchas otras.
+    11. Compilado : Verifica errores antes de ser ejecutado.
+
+    Desventaja
+    1. Toma mas tiempo y dedicación al escribir codigo.
+    2. Un grado mas complejo al momento de desarrollar nuestra aplicaciones.
+Typescript
+    -> npx tsc name_file.ts (para hacer correr)

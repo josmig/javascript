@@ -1,2 +1,0 @@
-Typescript 
-    -> npx tsc name_file.ts (para hacer correr)
