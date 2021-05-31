@@ -21,3 +21,5 @@ Ventajas y desventajas
     2. Un grado mas complejo al momento de desarrollar nuestra aplicaciones.
 Typescript
     -> npx tsc name_file.ts (para hacer correr)
+    -> Para que el archivo corra sin tener que compilar nuevamente se usa el siguiente comando
+        - tsc name_archivo.ts -w
