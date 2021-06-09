@@ -33,3 +33,21 @@ article h3 {
     1 rem valdra igual 10px asi como el em se va sumando  4rem = 40px , pero la gran diferencia es que si
     declaramos un valor REM dentro de un padre y declaramos de la misma manera otro valor REM dentro de un  hijo
     no se multiplicara con los del padre como lo hace el EM , si no lo hara con el "elemento" de rango mayor que establecio dicho valor.No hay herencia , todo es independiente se multiplican con el elemento de rango alto.
+
+
+Depurar CSS
+    SI queremos hacer pruebas o depurar los estilos.
+    Podemos hacer cerando una clase debug y ahi poner los estilos para identificar los elementos.
+    Mayormente se depura con Border o Background
+    pero existe otra propiedad como outline funciona de la misma manera que border pero con la diferencia de que outline no suma al modelo de caja , podemos utilizar cualquier de los dos pero el caso de border tenemos que siempre utilizar el box-sizing:border-box.
+
+
+Wrapper ->
+Es recomendable encerrar todo el contenido principal dentro de un elemento main.
+El main debe contener dos contenedores mas que seria el wrapper y main-content.
+
+Funciones:
+    -Main -> contenedor principal , podemos darle backgrounds o solo contener 
+    -wrapper -> Encargado del ancho y margin. Delimita las fronteras de nuestro contenido
+    -main-content ->Podemos darle los estlos al contenido como padding, background etc.
+Con todo esto utilizando el metodo wrapper nos ayuda a no romper nuestra contenido , flujo o arquitecutra.

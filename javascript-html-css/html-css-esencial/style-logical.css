@@ -1,0 +1,137 @@
+/*Los tamaños nos guiamos del archivo de figma es muy recomendado y profesional guiasrse del diseño de interfece*/
+
+@font-face { /*Forma de meter tipografia personalizada - ejemplo (asi ingresar todas las fuentes)*/
+    font-family:pantigoso;
+    src: url('./fonts/charter/otf/Charter-Regular.otf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+:root{
+    /* font-size: 20px; /*Tamaño establecido*/ 
+    /* font-size: 16px; */
+    font-size: 16px;
+    /*Variables CSS*/
+    --white30: white;
+    --white20: #a5a3a5;
+    --white10: #3a3539;
+}
+body{
+    color:var(--white30);    
+    /* font-family: pantigoso; */
+    font-family: 'Nunito', sans-serif;
+    background-color: #251F24;
+    margin: 0;
+    /* writing-mode: vertical-lr; */
+    /*margin-inline: 100px; /*margin-left-right*/
+    /*margin-block: 100px; /*margin-top y bottom*/
+
+}
+a{
+    color: var(--white30);
+    text-decoration: none;
+}
+
+.hero{
+    /* background-image: linear-gradient(to top,rgba(255,255,255,.3) ,transparent), url(./img/patron.png); */
+    background: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
+    height: 300px;
+}
+/*Header*/
+header{
+    font-size: 14px;
+    color: var(--white30);
+} 
+header li{
+    color:var(--white20)
+}
+header a{
+    color:inherit;
+    text-decoration: none;
+}
+header a:hover{
+    color: #212121;
+}
+nav details summary{    
+    font-weight: bold;
+}
+/* ol li:first-child{ //para seleccionar el primer elemento 
+    border: 1px solid black;
+} */
+
+/*Fin header*/
+hr{
+    margin-block: 40px;
+    border-color: rgba(97, 97, 97, 0.2);
+}
+h1,h2,h3{
+    /* font-weight: normal; */
+}
+h1{    
+    /* font-size: 3em; */
+    /* font-size: 3rem; */
+    /* font-size: 3.75em; */    
+    font-size: 60px;
+    /*start y end = top - bottom*/
+    margin-block-start: 64px;
+    margin-block-end: 16px;
+}
+
+h2{
+    font-size: 2em;
+    margin-block: 40px;
+}
+
+h3{
+    font-size: 1.5em;    
+    font-weight: 600;
+}
+pre{
+    background-color: var(--white10);
+    padding: 15px;
+}
+p{
+    font-size: 1em;
+    color:var(--white20);
+}
+.section-content{
+    counter-reset: titleList;
+}
+.section-content img{
+    margin-block-start: 40px;
+    display: block;
+}
+.section-content h3{
+    counter-increment: titleList;
+}
+.section-content h3::before{
+    content: counter(titleList,decimal)'. ';
+}
+.section-content h3::after{
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 4px;
+    background-color: var(--white30);
+}
+
+/**/
+.main hr{
+ /*    display:none; */
+}
+.main{
+    border: 1px solid red;
+}
+.wrapper{
+    border: 1px solid yellow;
+}
+.main-content{
+    border:1px solid blue;
+}
+
+blockquote{
+    margin-block-start: 80px;
+    margin-block-end: 63px;
+    background-color: var(--white10);
+    border-radius: 8px;
+}
