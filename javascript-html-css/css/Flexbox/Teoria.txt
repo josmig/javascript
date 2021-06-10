@@ -1,0 +1,27 @@
+
+Flexbox es un nuevo modelo de layout que permite alinear los elementos en vertical y horizontal
+Flexbox es una propiedad que requiere de elementos padres e hijos, sin eso flexbox no funciona.
+
+
+Flex-container : (Contenido que aplicaremos flex)
+
+1. Display :
+    ->Flex(funciona y ocupa el espacio de un elemento de bloque)
+    ->inline-flex (funciona como un inline-block se adapta a su contenido)
+
+2. Flex-direction-> Nos sirve para controlar el eje
+    Main axis y Cross axis: 
+        -> De manera predeterminada el main axis es horizontal y Cross axis es vertical.
+        -> Son capaces de cambiar de dirección con flex-direction.
+        -> Al aplicar flex-direction : column;
+            -> Automaticamente el main axis pasa a ser vertical y el Cross axis pasa a ser horizontal.
+
+3. Flex-wrap -> Manipula el eje principal
+4. Flex flow -> Con esta condicion manipulas los dos ejes
+            -> Combinación de flex-wrap y flex-direction.
+
+Recurso:
+https://workflowy.com/s/TvW.pFdTzWl8rS 
+
+Align-content -> Alinea solo las lineas (cada linea es como un elemeto de bloque)
+Align-items -> Alinea solo los items

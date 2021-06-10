@@ -1,0 +1,32 @@
+body{
+    font-size: 6rem;
+}
+.flex-container{
+    display:flex;
+    border: 1px solid indianred;
+    margin: 10px;
+    /* flex-direction: column; con esto podemos cambiar los ejes por defecto es row ,pero con colum main pasa a ser vertical y cross horizontal. Por defecto es al reves */
+    /* flex-wrap: wrap-reverse; */
+    /* flex-direction: row-reverse; */
+    /* flex-flow: wrap-reverse row-reverse; */
+    flex-wrap: wrap;
+    justify-content: center; /*alinea los items en el eje principal main axis*/
+    align-items: center; /*alinea los items en el eje secundario cross axis*/
+    height: 400px;
+}
+.flex-item{
+    margin-inline: 10px;
+    border:1px solid blue;  
+    /* font-size: 0;   */
+    width: 100px;
+    height: 100px;
+}
+
+.container{
+    background-color: yellow;
+    height: 400px;
+    display: flex;    
+    flex-flow: column; /*con colum cambie los ejes */
+    justify-content: center;
+    align-items: center;
+}
