@@ -23,10 +23,27 @@ body{
 }
 
 .container{
-    background-color: yellow;
+    background-color: #c2c2c2;
     height: 400px;
     display: flex;    
-    flex-flow: column; /*con colum cambie los ejes */
+    /* flex-flow: column; /*con colum cambie los ejes */
     justify-content: center;
     align-items: center;
+    font-size: 3rem;
+}
+/*Por defecto los pseudoelementos son inline, por ende no tienen dimensiones*/
+.container::before,
+.container::after{
+    content:'';
+    display:block; 
+    height: 5px;
+    /* width: 200px; */ /*Si usamos un width generara un scroll vertical y el texto se rompera formano un diseño horrible*/
+    flex:1;
+    background: linear-gradient(to right,red, yellow);
+    margin-right: .5em;
+}
+.container::after{
+    background: linear-gradient(to left,red, yellow);
+    margin-right: 0;
+    margin-left: .5em;
 }

@@ -1,4 +1,9 @@
 
+Recurso:
+Clase 1: https://workflowy.com/s/TvW.pFdTzWl8rS 
+
+
+
 Flexbox es un nuevo modelo de layout que permite alinear los elementos en vertical y horizontal
 Flexbox es una propiedad que requiere de elementos padres e hijos, sin eso flexbox no funciona.
 
@@ -20,8 +25,51 @@ Flex-container : (Contenido que aplicaremos flex)
 4. Flex flow -> Con esta condicion manipulas los dos ejes
             -> Combinación de flex-wrap y flex-direction.
 
-Recurso:
-https://workflowy.com/s/TvW.pFdTzWl8rS 
-
 Align-content -> Alinea solo las lineas (cada linea es como un elemeto de bloque)
 Align-items -> Alinea solo los items
+
+5.Flex items :
+    -> Son los hijos directos del flex-container (padre e hijo)
+    -> Pueden ser pseudoelementos
+    -> Texto
+Los elementos hijos que tienen position absolute o fixed no pertenecen al flujo por loc ual no se puede aplicar estilos flex pero si podemos aplicar flex a su padre.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
