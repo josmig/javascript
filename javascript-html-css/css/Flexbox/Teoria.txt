@@ -28,6 +28,8 @@ Flex-container : (Contenido que aplicaremos flex)
 Align-content -> Alinea solo las lineas (cada linea es como un elemeto de bloque)
 Align-items -> Alinea solo los items
 
+Recursos
+Clase 2 : https://workflowy.com/s/TvW.67XF5QeKGm
 5.Flex items :
     -> Son los hijos directos del flex-container (padre e hijo)
     -> Pueden ser pseudoelementos
