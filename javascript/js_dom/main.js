@@ -17,8 +17,15 @@ form.onsubmit = (e) => {
     /* console.log(textoTask); */
 
     const lista = document.getElementById('lista');
-    lista.innerHTML = '';
+    /* lista.innerHTML = '';
     for(let i=0; i < todos.length; i++){
         lista.innerHTML += '<li>'+ todos[i] + '</li>';
-    }   
+    } */
+
+    //Usando MAP para recorrer el arreglo(formas mas simpllificada)
+    const listaTemplate = todos.map(t => '<li>'+ t +'</li>'); 
+    //nuestra listaTemplato ahora es un arreglo por eso no se puede pasar a innerHTML por eso ponemos el metodo join que sirve para unir y concatenar. 
+    lista.innerHTML = listaTemplate.join('');
+    console.log(listaTemplate);
+
 }
