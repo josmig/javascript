@@ -55,7 +55,28 @@ Animal.prototype.saludar = function(){
     console.log(`Hola  me llamo ${this.nombre}`);
 }
 
-const perro = new Animal('Mafi','Hembra'),
+//Herencia Prototipica
+function Perro(nombre,genero,tamanio){
+    //Manda a  llamar al constructor padre super();
+    this.super = Animal;
+    this.super(nombre , genero);
+    this.tamanio = tamanio;
+}
+
+//Perro esta heredando de aniaml    
+Perro.prototype = new Animal();
+Perro.prototype.constructor= Perro;
+
+//Sobre escritura de métodos del Padre en un hijo
+Perro.prototype.sonido= function(){
+    console.log('Soy un perro y mi sonido es un ladrido');
+}
+Perro.prototype.ladrar = function(){
+    console.log('Guuuaauu Guauaauu');
+}
+
+
+const perro = new Perro('Mafi','Hembra','Mediano'),
     perro1 = new Animal('Boby','Macho');
 
 
